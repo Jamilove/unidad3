@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Bono</title>
+    <link rel="stylesheet" href="bono.css"/>
+</head>
+<body>
+
+    <script>
+      
+      
+
+     nombre = prompt("Nombre");
+     departamento= prompt("Departamento/Area de trabajo");
+     sueldodiario= prompt("Sueldo diario");
+     antiguedad= prompt("Años de antiguedad");
+     diasdetrabajo= prompt("Dias trabajados");
+     subtotal= 0;
+     bono=0;
+     total=0;
+
+
+
+     subtotal= sueldodiario * diasdetrabajo;
+
+
+  
+     respuesta= confirm ("desea aplicar el bono")
+     if (respuesta==true) {
+
+        if (antiguedad >= 15) {
+                bono = subtotal*.30
+                alert("el bono es del 30%  " + bono);
+        
+
+
+            } else if(antiguedad < 15){
+                 bono = subtotal*.15
+                 alert("el bono es del 15%  " + bono);
+         
+            }
+        
+     } 
+            
+
+            total= bono+subtotal
+
+
+    
+    </script>
+   <center>
+    <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Departamento</th>
+          <th>Sueldo diario</th>
+          <th>Antiguedad</th>
+          <th>dias de trabajo</th>
+          <th>subtotal</th>
+          <th>bono</th>
+          <th>total</th>
+        </tr>
+  
+        <tr>
+          <br><br><br><br><b><br>
+          </b>
+          <td>
+            <script>
+              document.write(nombre);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(departamento);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(sueldodiario);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(antiguedad);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(diasdetrabajo);    
+            </script>
+            <td>
+                <script>
+                  document.write(subtotal);
+                </script>
+              </td>
+          </td>
+
+          <td>
+            <script>
+              document.write(bono);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(total);
+            </script>
+          </td>
+        
+            </script>
+          </td>
+
+        </tr>
+      </table>
+<br><br><br>
+
+      <h1>Aline Jamileth Dominguez Rocha</h1>
+    </center> 
+
+
+
+</body>
+</html>

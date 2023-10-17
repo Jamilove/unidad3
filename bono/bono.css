@@ -1,0 +1,33 @@
+body{
+background-color: rgb(204, 139, 192);
+}
+
+
+table {
+    background-color: pink;
+    border: solid 1px black;
+    margin: 0px;
+  }
+  
+  tr{
+      align-items: center;
+  }
+  th,td {
+  padding: 10px;
+  border: solid 1px black;
+  }
+
+  h1{
+
+    text-align: center;
+    
+
+
+  }
+  
+  /* td {
+      text-align: center;
+  padding: 10px;
+  border: solid 1px black;
+  } */
+  

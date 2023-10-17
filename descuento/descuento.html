@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="descuento.css"/>
+    <title>descuento</title>
+  </head>
+  <body>
+    <script>
+      articulo = prompt("¿Que articulo llevaras hoy?");
+      cantidad = prompt("¿Cuantos llevaras?");
+      precio = prompt("¿precio?");
+
+      subtotal = precio * cantidad;
+
+      total = 0;
+      totalDescuento = 0;
+      descuento = 0;
+
+      console.log(precio);
+      document.write("<br>");
+
+      document.write("Articulo: " + " " + "<b>" + articulo + "</b>");
+      document.write("<br>");
+
+      document.write("Cantidad: " + " " + "<b>" + cantidad + "</b>");
+      document.write("<br>");
+
+      document.write("precio del producto: " + " " + "<b>" + precio + "</b>");
+      document.write("<br>");
+
+      document.write("Tu total es de: " + " " + "<b>" + subtotal + "</b>");
+      document.write("<br>");
+
+
+
+      if (cantidad >= 10) {
+        descuento = subtotal * 0.2;
+        respuesta = confirm(
+          "El cliente lleva mas de 10 articulos ¿desdea aplicarle el descuento?"
+        );
+
+        if (respuesta == true) {
+          totalDescuento = subtotal - descuento;
+          alert("descuento = " + descuento);
+          document.write("total = " + totalDescuento);
+        } else {
+          document.write("total = " + total);
+        }
+      } else {
+        document.write("no aplica descuento ");
+      }
+    </script>
+
+<table>
+    <tr>
+      <th>articulo</th>
+      <th>cantidad de articulos</th>
+      <th>total</th>
+    </tr>
+
+    <tr>
+      <td>
+        <script>
+          document.write(articulo);
+        </script>
+      </td>
+      <td>
+        <script>
+          document.write(cantidad);
+        </script>
+      </td>
+      <td>
+        <script>
+          if (respuesta == true) {
+              document.write(totalDescuento);
+          }
+          else
+          {
+              document.write(subtotal);
+          }
+        </script>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

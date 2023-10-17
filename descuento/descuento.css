@@ -1,0 +1,20 @@
+table {
+    background-color: pink;
+    border: solid 1px black;
+    margin: 0px;
+  }
+  
+  tr{
+      align-items: center;
+  }
+  th {
+  padding: 10px;
+  border: solid 1px black;
+  }
+  
+  td {
+      text-align: center;
+  padding: 10px;
+  border: solid 1px black;
+  }
+  
